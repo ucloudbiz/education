@@ -36,4 +36,5 @@ cloudmonkey createPortForwardingRule \
  	publicport=10008 \
  	virtualmachineid=$vmid
 
-echo "ssh root@$vmip -p 10008 for ssh access"
+echo "ssh root@$ipaddress -p 10008 for ssh access from outside"
+echo "ssh root@$vmip -p 22 for ssh access from inside"
