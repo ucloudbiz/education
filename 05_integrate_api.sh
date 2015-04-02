@@ -35,8 +35,3 @@ cloudmonkey createPortForwardingRule \
  	protocol=TCP \
  	publicport=10008 \
  	virtualmachineid=$vmid
-
-echo "=================================================================="
-echo "for ssh $ipaddress -p 10008 userid/password = root/$pw"
-echo "for web http://$ipaddress/"
-echo "=================================================================="
