@@ -11,7 +11,7 @@ cloudmonkey deployVirtualMachine \
 	templateid=dc61305d-3520-44a1-bccc-7d7bb531bdc9 \
 	zoneid=eceb5d65-6571-4696-875f-5a17949f3317 \
 	name=$server \
-	displayname=$server 
+	displayname=$server | tee $tempfile1
 
 vmid=$(grep "\"id\"" $tempfile1 | awk '{print $2}' | tr -d '"' | tr -d ',' | head -1)
 pw=$(grep "\"password\"" $tempfile1 | awk '{print $2}' | tr -d '"' | tr -d ',' )
