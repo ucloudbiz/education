@@ -20,4 +20,6 @@ sed -i.bak '172s/^\(.\{0\}\)/\1#/' $cloudmonkey_path/cloudmonkey/requester.py
 sed -i.bak '175s/^\(.\{0\}\)/\1#/' $cloudmonkey_path/cloudmonkey/requester.py
 sed -i.bak '176s/^\(.\{0\}\)/\1#/' $cloudmonkey_path/cloudmonkey/requester.py
 
+rm -rf ez* Py* set*
+
 cloudmonkey quit
