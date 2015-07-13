@@ -2,7 +2,7 @@
 
 cloudmonkey set profile server 1>/dev/null
 
-server=myeduvm100
+server=edu-server
 tempfile1=$HOME/tmpfile1
 tempfile2=$HOME/tmpfile2
 
