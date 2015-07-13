@@ -14,6 +14,7 @@ pip install --upgrade prettytable
 pip install --upgrade Pygments
 pip install cloudmonkey
 pip install --upgrade cloudmonkey
+easy_install argparse
 
 cloudmonkey_path=`find /usr/lib -name site-packages`
 sed -i.bak '172s/^\(.\{0\}\)/\1#/' $cloudmonkey_path/cloudmonkey/requester.py
